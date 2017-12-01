@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Niranjan24491/Niranjan-Portfolio/issues"
   },
-  "homepage": "https://github.com/Niranjan24491/Niranjan-Portfolio#readme"
+  "homepage": "https://github.com/Niranjan24491/Niranjan-Portfolio#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }
