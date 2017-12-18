@@ -46,17 +46,9 @@ const compiler = webpack(webpackConfig);
 
 app.use(express.static(__dirname + "/www"));
 
-app.use(
-  webpackDevMiddleware(compiler, {
-    hot: true,
-    filename: "bundle.js",
-    publicPath: "/",
-    stats: {
-      colors: true
-    },
-    historyApiFallback: true
-  })
-);
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: webpackConfig.output.publicPath
+}));
 
 mongoose.connect(dbConfig.url);
 
