@@ -21,9 +21,8 @@ class Profiles extends Component {
   componentDidMount() {
     axios
       .get(SKILLS_DATA_URL)
-      .then(function(response) {
-        SKILLS_DATA = response.data[0];
-        console.log(this);
+      .then((response) => {
+        this.setState({skillsData: response.data[0]})
       })
       .catch(function(error) {
         console.log(response);
@@ -37,7 +36,7 @@ class Profiles extends Component {
   getComponent = item => {
     switch (item) {
       case "Home":
-        return <Home data={SKILLS_DATA} />;
+        return <Home data={this.state.skillsData} />;
       case "Skills":
         return <Skills />;
       case "Projects":
