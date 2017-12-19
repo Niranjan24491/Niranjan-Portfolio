@@ -1,0 +1,39 @@
+.profiles-container {
+  height: 100%;
+  text-transform: uppercase;
+
+  .menu-card {
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    width: 20%;
+    span {
+      &:nth-child(1) {
+        text-decoration-color: orange;
+        font-size: 20px;
+      }
+      transition: all 350ms ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scaleX(1.5);
+        transition: all 350ms ease-in-out;
+      }
+      font-size: 14px;
+      display: block;
+      text-decoration: underline;
+      margin: auto;
+      text-align: center;
+      line-height: 2;
+      text-underline-position: under;
+      position: relative;
+      top: 25%;
+    }
+  }
+
+  .profiles-card {
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    width: 80%;
+  }
+}

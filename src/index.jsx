@@ -1,5 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import Home from "./Home";
+import "./index.scss";
+import Profiles from "./Profile";
 
-render(<Home />, document.getElementById("App"));
+render(<Profiles />, document.getElementById("App"));

@@ -1,12 +1,12 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: './src/index.jsx',
+    app: "./src/index.jsx"
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   output: {
     path: path.join(__dirname, "www"),
     filename: "bundle.js"
@@ -17,23 +17,35 @@ module.exports = {
         test: /\.jsx$/,
         use: ["babel-loader"],
         include: [path.resolve(__dirname, "src")]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader"
+          }
+        ],
+        include: [path.resolve(__dirname, "src")]
       }
     ]
   },
   devServer: {
     contentBase: path.join(__dirname, "www"),
-    publicPath: '/'
+    publicPath: "/"
   },
   resolve: {
-   extensions: [
-     '.js',
-     '.jsx'
-   ]
+    extensions: [".js", ".jsx", ".scss"]
   },
   plugins: [
-    new CleanWebpackPlugin(['www']),
+    new CleanWebpackPlugin(["www"]),
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: "Development",
       template: "./src/index.ejs"
     })
   ]
