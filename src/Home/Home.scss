@@ -1,11 +1,35 @@
 .home-container {
   height: 100%;
-  text-transform: uppercase;
 
   h1 {
     align-items: center;
-    top: 26%;
-    left: 17%;
+    top: 17%;
+    left: 36%;
+    position: fixed;
+    font-size: 46px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  h3 {
+    align-items: center;
+    left: 2%;
     position: relative;
+    font-size: 46px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .symbol {
+    img {
+      position: fixed;
+      top: 29%;
+      left: 50%;
+      width: 6%;
+    }
+  }
+  .sub-title {
+    display: inline-block;
+    position: fixed;
+    top: 36%;
+    left: 36%;
   }
 }

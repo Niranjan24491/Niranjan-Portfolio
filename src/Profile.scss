@@ -1,8 +1,16 @@
 .profiles-container {
   height: 100%;
-  text-transform: uppercase;
+  font: 400 100px/1.2 "Merienda One", Helvetica, sans-serif;
+
+  .bg-image {
+    position: fixed;
+    img {
+      width: 100%;
+    }
+  }
 
   .menu-card {
+    text-transform: uppercase;
     height: 100%;
     overflow: hidden;
     display: inline-block;
@@ -30,10 +38,82 @@
     }
   }
 
+  .menu-card-white {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .menu-card-black {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
   .profiles-card {
     height: 100%;
     overflow: hidden;
     display: inline-block;
-    width: 80%;
+    width: 70%;
+  }
+
+  .social-card {
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    width: 10%;
+
+    span {
+      font-size: 34px;
+      display: block;
+      margin: auto;
+      text-align: center;
+      line-height: 1.3;
+      position: relative;
+      top: 15%;
+    }
+
+    .fa {
+      transition: all 350ms ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transition: all 350ms ease-in-out;
+      }
+    }
+
+    .fa {
+      padding: 10px;
+      font-size: 25px;
+      border-radius: 50%;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3b5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55acee;
+      color: white;
+    }
+
+    .fa-google-plus {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
   }
 }

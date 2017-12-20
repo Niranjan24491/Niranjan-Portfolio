@@ -32,6 +32,10 @@ module.exports = {
           }
         ],
         include: [path.resolve(__dirname, "src")]
+      },
+      {
+        test: /\.(?:png|jpg|svg)$/,
+        loader: "url-loader"
       }
     ]
   },

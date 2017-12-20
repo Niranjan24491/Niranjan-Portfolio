@@ -6,7 +6,8 @@ exports.create = function(req, res) {
     res.status(400).send({ message: "Skill can not be empty" });
   } else {
     const skills = new Skill({
-      name: req.body.name || "Untitled Skill",
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       title: req.body.title,
       skills: req.body.skills
     });
