@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./Profile.scss";
-import bgm from "../images/bg3.jpg";
+import bgm from "../../images/bg3.jpg";
 import Home from "./Home/Home";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Interests from "./Interests/Interests";
 import Contacts from "./Contacts/Contacts";
+import About from "./About/About";
 import axios from "axios";
 import FontAwesome from "react-fontawesome";
 
@@ -59,6 +60,8 @@ class Profiles extends Component {
         return <Projects />;
       case "Interests":
         return <Interests />;
+      case "About":
+        return <About />;
       case "Contacts":
         return <Contacts />;
     }
@@ -73,7 +76,8 @@ class Profiles extends Component {
           <span onClick={e => this.menuClick("Skills")}>Skills</span>
           <span onClick={e => this.menuClick("Projects")}>Projects</span>
           <span onClick={e => this.menuClick("Interests")}>Interests</span>
-          <span onClick={e => this.menuClick("Contacts")}>Contacts</span>
+          <span onClick={e => this.menuClick("About")}>About Me</span>
+          <span onClick={e => this.menuClick("Contacts")}>Contact Me</span>
         </div>
         <div className="profiles-card">
           {this.getComponent(this.state.profile)}

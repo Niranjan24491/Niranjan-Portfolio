@@ -67,8 +67,10 @@ mongoose.connection.once("openUri", function() {
   console.log("Successfully connected to the database");
 });
 
-// Require Skills routes
+// Require all routes
 require("./app/skills/skills.routes.js")(app);
+require("./app/about/about.routes.js")(app);
+require("./app/contact/contact.routes.js")(app);
 
 const server = app.listen(3000, function() {
   const host = server.address().address;

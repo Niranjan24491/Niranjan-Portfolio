@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Home.scss";
-import htmlLogo from "../../images/htmlLogo.png";
+import htmlLogo from "../../../images/htmlLogo.png";
 
 class Home extends Component {
   constructor(props) {

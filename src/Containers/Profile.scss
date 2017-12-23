@@ -1,6 +1,6 @@
 .profiles-container {
   height: 100%;
-  font: 400 100px/1.2 "Merienda One", Helvetica, sans-serif;
+  font: 400 25px "Merienda One", Helvetica, sans-serif;
 
   .bg-image {
     position: fixed;
@@ -14,7 +14,7 @@
     height: 100%;
     overflow: hidden;
     display: inline-block;
-    width: 20%;
+    width: 10%;
     span {
       &:nth-child(1) {
         text-decoration-color: orange;
@@ -50,7 +50,7 @@
     height: 100%;
     overflow: hidden;
     display: inline-block;
-    width: 70%;
+    width: 80%;
   }
 
   .social-card {
@@ -63,10 +63,10 @@
       font-size: 34px;
       display: block;
       margin: auto;
-      text-align: center;
       line-height: 1.3;
       position: relative;
       top: 15%;
+      margin: auto;
     }
 
     .fa {
@@ -81,10 +81,10 @@
       padding: 10px;
       font-size: 25px;
       border-radius: 50%;
-      width: 30px;
+      width: 55px;
       text-align: center;
       text-decoration: none;
-      margin: 5px 2px;
+      margin-bottom: 6%;
     }
 
     .fa:hover {
