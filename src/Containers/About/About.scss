@@ -1,11 +1,13 @@
 .about-container {
-  height: 100%;
+  min-height: 100%;
   text-align: center;
+  border-bottom: 1px solid orangered;
 
   h1 {
     align-items: center;
     font-size: 46px;
     margin: 1%;
+    font-weight: bold;
   }
 
   .react-parallax {

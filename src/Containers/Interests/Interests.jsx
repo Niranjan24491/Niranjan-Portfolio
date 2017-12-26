@@ -48,9 +48,9 @@ class Interests extends Component {
   };
   render() {
     return (
-      <div className="interests-container">
+      <div className="interests-container" id="interests">
         <h1 className="name">Interests</h1>
-        <Grid>
+        <Grid fluid={true}>
           <Row>
             <Col xs={12} md={12} lg={12}>
               <h3>The ART of Movie Making</h3>

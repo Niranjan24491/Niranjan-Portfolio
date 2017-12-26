@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./Profile.scss";
-import bgm from "../../images/bg3.jpg";
+import profileImage from "../../images/profilePhoto.jpg";
 import Home from "./Home/Home";
 import Skills from "./Skills/Skills";
-import Projects from "./Projects/Projects";
+import Experience from "./Experience/Experience";
 import Interests from "./Interests/Interests";
 import Contacts from "./Contacts/Contacts";
 import About from "./About/About";
+import Education from "./Education/Education";
 import axios from "axios";
 import FontAwesome from "react-fontawesome";
+import { Grid, Row, Col, Image } from "react-bootstrap";
 
 const SKILLS_DATA_URL = "http://localhost:3000/skills";
 class Profiles extends Component {
@@ -17,7 +19,7 @@ class Profiles extends Component {
     this.state = {
       profile: "Home",
       skillsData: {},
-      menuClass: "menu-card-white"
+      profileClass: ""
     };
   }
 
@@ -33,76 +35,93 @@ class Profiles extends Component {
   }
 
   menuClick = item => {
-    this.setState({ profile: item });
-    if (item === "Home") {
-      this.setState({ menuClass: "menu-card-white" });
-    } else {
-      this.setState({ menuClass: "menu-card-black" });
+    switch (item) {
+      case "Home":
+        location.href = "#home";
+        break;
+      case "Skills":
+        location.href = "#skills";
+        break;
+      case "Experience":
+        location.href = "#experience";
+        break;
+      case "Education":
+        location.href = "#education";
+        break;
+      case "Interests":
+        location.href = "#interests";
+        break;
+      case "About":
+        location.href = "#about";
+        break;
+      case "Contacts":
+        location.href = "#contact";
+        break;
     }
+    item === "About"
+      ? this.setState({
+          profileClass: "profile-fluid"
+        })
+      : this.setState({
+          profileClass: ""
+        });
   };
 
-  imageDiv = () => {
-    if (this.state.profile === "Home") {
-      return (
-        <div className="bg-image">
-          <img src={bgm} />
-        </div>
-      );
-    }
-  };
   getComponent = item => {
     switch (item) {
       case "Home":
-        return <Home data={this.state.skillsData} />;
+        location.href = "#home";
       case "Skills":
-        return <Skills />;
-      case "Projects":
-        return <Projects />;
+        location.href = "#skills";
+      case "Experience":
+        location.href = "#experience";
+      case "Education":
+        location.href = "#education";
       case "Interests":
-        return <Interests />;
+        location.href = "#interests";
       case "About":
-        return <About />;
+        location.href = "#about";
       case "Contacts":
-        return <Contacts />;
+        location.href = "#contact";
     }
   };
 
   render() {
     return (
-      <div className="profiles-container">
-        {this.imageDiv()}
-        <div className={`menu-card ${this.state.menuClass}`}>
-          <span onClick={e => this.menuClick("Home")}>Home</span>
-          <span onClick={e => this.menuClick("Skills")}>Skills</span>
-          <span onClick={e => this.menuClick("Projects")}>Projects</span>
-          <span onClick={e => this.menuClick("Interests")}>Interests</span>
-          <span onClick={e => this.menuClick("About")}>About Me</span>
-          <span onClick={e => this.menuClick("Contacts")}>Contact Me</span>
+      <div className="portfolio">
+        <div className="menu-container">
+          <div className="menu-card menu-card-white">
+            <div className="profile-image">
+              <Image src={profileImage} circle />
+            </div>
+            <div className="menu-card">
+              <span onClick={e => this.menuClick("Home")}>Home</span>
+              <span onClick={e => this.menuClick("Skills")}>Skills</span>
+              <span onClick={e => this.menuClick("Experience")}>
+                Experience
+              </span>
+              <span onClick={e => this.menuClick("Education")}>Education</span>
+              <span onClick={e => this.menuClick("Interests")}>Interests</span>
+              <span onClick={e => this.menuClick("About")}>About Me</span>
+              <span onClick={e => this.menuClick("Contacts")}>Contact Me</span>
+            </div>
+          </div>
         </div>
-        <div className="profiles-card">
-          {this.getComponent(this.state.profile)}
-        </div>
-        <div className="social-card">
-          <FontAwesome
-            name="facebook"
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-          />
-          <FontAwesome
-            name="google-plus"
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-          />
-          <FontAwesome
-            name="twitter"
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-          />
-          <FontAwesome
-            name="youtube"
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-          />
-          <FontAwesome
-            name="linkedin"
-            style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-          />
+
+        <div className="profile-container">
+          <Grid fluid={true}>
+            <Col xs={12} md={12} lg={12} className={this.state.profileClass}>
+              <div className="profiles-card">
+                <Home />
+                <Skills />
+                <Experience />
+                <Education />
+                <Interests />
+                <About />
+                <Contacts />
+              </div>
+            </Col>
+          </Grid>
         </div>
       </div>
     );

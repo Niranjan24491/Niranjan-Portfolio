@@ -11,7 +11,7 @@ class Skills extends Component {
     image = false,
     textPosition = "right",
     tooltip = true,
-    color = "#009688"
+    color = "#EBAA32"
   ) => {
     return (
       <Rating
@@ -28,15 +28,20 @@ class Skills extends Component {
   };
   render() {
     return (
-      <div className="skills-container">
+      <div className="skills-container" id="skills">
         <h1 className="name">Skills</h1>
-        <Grid>
+        <h3 className="name">
+          {" "}
+          What's life without <span className="sub-name"> skills</span> . . .
+          !!!
+        </h3>
+        <Grid fluid={true}>
           <Row className="show-grid">
             <Col xs={12} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 9, "HTML5", false, "right", true)}
             </Col>
             <Col xs={12} md={6} lg={6} className="align-items-left">
-              {this.addSkills("circle", 8, "CSS", false, "left")}
+              {this.addSkills("circle", 8, "CSS3", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
@@ -95,6 +100,60 @@ class Skills extends Component {
               {this.addSkills("circle", 9, "jQuery", false, "left")}
             </Col>
           </Row>
+          <Row className="show-grid">
+            <Col xs={12} md={6} lg={6} className="align-items-right">
+              {this.addSkills("circle", 6, "Ember-CLI Mirage", false, "right")}
+            </Col>
+            <Col xs={12} md={6} lg={6} className="align-items-left">
+              {this.addSkills("circle", 5, "Webpack", false, "left")}
+            </Col>
+          </Row>
+        </Grid>
+        <h3 className="name">
+          {" "}
+          What's<span className="sub-name"> skills</span> without tools . . .
+          !!!
+        </h3>
+        <Grid fluid={true}>
+          <Row>
+            <Col xs={12} md={6} lg={6} className="align-items-right">
+              {this.addSkills(
+                "circle",
+                8,
+                "Visual Studio Code",
+                false,
+                "right",
+                true
+              )}
+            </Col>
+            <Col xs={12} md={6} lg={6} className="align-items-left">
+              {this.addSkills("circle", 9, "Atom", false, "left")}
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} md={6} lg={6} className="align-items-right">
+              {this.addSkills("circle", 10, "NetBeans", false, "right")}
+            </Col>
+          </Row>
+        </Grid>
+        <h3 className="name">
+          {" "}
+          What's tools without storing<span className="sub-name">
+            {" "}
+            skills
+          </span>{" "}
+          . . . !!!
+        </h3>
+        <Grid fluid={true}>
+          <Row>
+            <Col xs={12} md={6} lg={6} className="align-items-right">
+              {this.addSkills("circle", 8, "GitHub", false, "right")}
+            </Col>
+            <Col xs={12} md={6} lg={6} className="align-items-left">
+              {this.addSkills("circle", 7, "SVN", false, "left")}
+            </Col>
+          </Row>
+          <Row />
         </Grid>
       </div>
     );

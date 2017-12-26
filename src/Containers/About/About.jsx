@@ -26,8 +26,8 @@ class About extends Component {
   }
   render() {
     return (
-      <div className="about-container">
-        {/* <h1 className="name">About Me</h1> */}
+      <div className="about-container" id="about">
+        <h1 className="name">About Me</h1>
         <Parallax bgImage={bgm} strength={400}>
           <p className="about-text">{this.state.aboutData}</p>
         </Parallax>

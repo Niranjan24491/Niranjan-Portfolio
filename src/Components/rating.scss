@@ -5,7 +5,6 @@
 
 .rating-name {
   display: inline-block;
-  font-size: 15px;
   width: auto;
   margin-right: 3%;
   margin-left: 3%;
@@ -64,9 +63,6 @@
   border-radius: 50%;
 }
 
-.rating-image {
-}
-
 .rating-tooltip {
   position: relative;
   display: inline-block;
@@ -82,7 +78,7 @@
   padding: 5px 10px;
   font-size: 10px;
   position: absolute;
-  top: -12px;
+  top: -21px;
   z-index: 1;
 
   /* Position the tooltip */

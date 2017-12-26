@@ -62,9 +62,9 @@ class Contacts extends Component {
 
   render() {
     return (
-      <div className="contacts-container">
+      <div className="contacts-container" id="contact">
         <h1 className="name">Contact Me !!!</h1>
-        <Grid>
+        <Grid fluid={true}>
           <Row className="show-grid">
             <Col xs={12} md={12} lg={12}>
               <h4>
@@ -104,15 +104,9 @@ class Contacts extends Component {
               <MyMapComponent
                 isMarkerShown
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-                loadingElement={
-                  <div style={{ height: `100%`, background: `grey` }} />
-                }
-                containerElement={
-                  <div style={{ height: `350px`, background: `grey` }} />
-                }
-                mapElement={
-                  <div style={{ height: `100%`, background: `grey` }} />
-                }
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ height: `300px` }} />}
+                mapElement={<div style={{ height: `100%` }} />}
               />
             </Col>
           </Row>
