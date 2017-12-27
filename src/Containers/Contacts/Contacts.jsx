@@ -7,7 +7,6 @@ import {
   Marker
 } from "react-google-maps";
 import "./Contacts.scss";
-import axios from "axios";
 
 const CONTACT_DATA_URL = "http://localhost:3000/contact";
 const MyMapComponent = withScriptjs(

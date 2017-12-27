@@ -7,12 +7,11 @@ import Experience from "./Experience/Experience";
 import Interests from "./Interests/Interests";
 import Contacts from "./Contacts/Contacts";
 import Education from "./Education/Education";
-import axios from "axios";
 import FontAwesome from "react-fontawesome";
 import { Grid, Row, Col, Image } from "react-bootstrap";
 
 const SKILLS_DATA_URL = "http://localhost:3000/skills";
-class Profiles extends Component {
+export default class Profiles extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,17 +19,6 @@ class Profiles extends Component {
       skillsData: {},
       profileClass: ""
     };
-  }
-
-  componentDidMount() {
-    axios
-      .get(SKILLS_DATA_URL)
-      .then(response => {
-        this.setState({ skillsData: response.data[0] });
-      })
-      .catch(function(error) {
-        console.log(response);
-      });
   }
 
   menuClick = item => {
@@ -102,5 +90,3 @@ class Profiles extends Component {
     );
   }
 }
-
-export default Profiles;
