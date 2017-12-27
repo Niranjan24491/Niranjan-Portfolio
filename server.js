@@ -3,7 +3,7 @@ const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpack = require("webpack");
 const webpackConfig = require("./webpack.config.js");
 
-const app = express();
+const app = express(); 
 
 //set our port to either a predetermined port number if you have set
 //it up, or 3001
