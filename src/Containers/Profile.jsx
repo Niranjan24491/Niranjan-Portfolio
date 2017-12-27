@@ -6,7 +6,6 @@ import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
 import Interests from "./Interests/Interests";
 import Contacts from "./Contacts/Contacts";
-import About from "./About/About";
 import Education from "./Education/Education";
 import axios from "axios";
 import FontAwesome from "react-fontawesome";
@@ -51,9 +50,6 @@ class Profiles extends Component {
       case "Interests":
         location.href = "#interests";
         break;
-      case "About":
-        location.href = "#about";
-        break;
       case "Contacts":
         location.href = "#contact";
         break;
@@ -65,25 +61,6 @@ class Profiles extends Component {
       : this.setState({
           profileClass: ""
         });
-  };
-
-  getComponent = item => {
-    switch (item) {
-      case "Home":
-        location.href = "#home";
-      case "Skills":
-        location.href = "#skills";
-      case "Experience":
-        location.href = "#experience";
-      case "Education":
-        location.href = "#education";
-      case "Interests":
-        location.href = "#interests";
-      case "About":
-        location.href = "#about";
-      case "Contacts":
-        location.href = "#contact";
-    }
   };
 
   render() {
@@ -102,7 +79,6 @@ class Profiles extends Component {
               </span>
               <span onClick={e => this.menuClick("Education")}>Education</span>
               <span onClick={e => this.menuClick("Interests")}>Interests</span>
-              <span onClick={e => this.menuClick("About")}>About Me</span>
               <span onClick={e => this.menuClick("Contacts")}>Contact Me</span>
             </div>
           </div>
@@ -117,7 +93,6 @@ class Profiles extends Component {
                 <Experience />
                 <Education />
                 <Interests />
-                <About />
                 <Contacts />
               </div>
             </Col>

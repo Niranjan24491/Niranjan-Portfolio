@@ -37,74 +37,74 @@ class Skills extends Component {
         </h3>
         <Grid fluid={true}>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 9, "HTML5", false, "right", true)}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 8, "CSS3", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 8, "Javascript")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 7, "OOJS", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 6, "React")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 4, "Redux", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 7, "EmberJS")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 7, "HandleBars", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 9, "Bootstrap")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 9, "Foundation", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 5, "Node")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 5, "Express", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 4, "AngularJS", false, "right")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 6, "MongoDB", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 7, "SASS", false, "right")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 9, "jQuery", false, "left")}
             </Col>
           </Row>
           <Row className="show-grid">
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 6, "Ember-CLI Mirage", false, "right")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 5, "Webpack", false, "left")}
             </Col>
           </Row>
@@ -115,8 +115,8 @@ class Skills extends Component {
           !!!
         </h3>
         <Grid fluid={true}>
-          <Row>
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+          <Row className="show-grid">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills(
                 "circle",
                 8,
@@ -126,12 +126,12 @@ class Skills extends Component {
                 true
               )}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 9, "Atom", false, "left")}
             </Col>
           </Row>
-          <Row>
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+          <Row className="show-grid">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 10, "NetBeans", false, "right")}
             </Col>
           </Row>
@@ -146,10 +146,10 @@ class Skills extends Component {
         </h3>
         <Grid fluid={true}>
           <Row>
-            <Col xs={12} md={6} lg={6} className="align-items-right">
+            <Col xs={6} md={6} lg={6} className="align-items-right">
               {this.addSkills("circle", 8, "GitHub", false, "right")}
             </Col>
-            <Col xs={12} md={6} lg={6} className="align-items-left">
+            <Col xs={6} md={6} lg={6} className="align-items-left">
               {this.addSkills("circle", 7, "SVN", false, "left")}
             </Col>
           </Row>

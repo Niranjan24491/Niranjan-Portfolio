@@ -34,7 +34,11 @@ export default class Home extends Component {
               field of UI development. would like to qualify as a top level
               designer & developer in a growth oriented organization which
               offers diverse job responsibilities and allows me to enhance my
-              skills.
+              skills.I have spent the last 4 years in self development to become
+              a better developer every day and have tried to learn in-depth
+              about the technologies I follow. Although I love what I'm doin, I
+              feel I'm ready to take the next step and challenge the extra mile
+              which the clients require.
             </p>
           </Col>
         </Row>

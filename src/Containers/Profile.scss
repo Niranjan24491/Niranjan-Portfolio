@@ -88,3 +88,94 @@
 .portfolio {
   overflow: hidden;
 }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
+  .menu-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: initial;
+    position: fixed;
+
+    .profile-image {
+      display: inline-block;
+      img {
+        width: 75px;
+        height: 75px;
+      }
+    }
+
+    .menu-card {
+      width: 85%;
+      span {
+        padding-left: 4%;
+        min-width: 60px;
+        display: inline-table;
+      }
+    }
+  }
+
+  .profile-container {
+    margin-top: 10%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    .home-container {
+      margin-top: 4%;
+      padding-top: 0%;
+    }
+    .skills-container,
+    .experience-container,
+    .education-container,
+    .interests-container,
+    .about-container,
+    .contacts-container {
+      margin-top: 10%;
+    }
+
+    .skills-container {
+      min-height: 1190px;
+      .show-grid {
+        margin-bottom: 4%;
+        margin-top: 3%;
+      }
+    }
+
+    .experience-container {
+      min-height: 860px;
+      .logo {
+        img {
+          margin-top: -37%;
+          margin-left: 81%;
+        }
+      }
+    }
+
+    .education-container {
+      min-height: 800px;
+      .timeline:before {
+        left: 75%;
+      }
+
+      .edu-image {
+        left: 75%;
+      }
+    }
+
+    .interests-container {
+      min-height: 831px;
+      .react-photo-gallery--gallery {
+        img {
+          width: 49%;
+          height: 0%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 812px) and (min-device-width: 300px) and (orientation: portrait) {
+  .home-container {
+    min-height: 50%;
+  }
+}
