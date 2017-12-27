@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-import Rating from "../../components/rating";
+import Rating from "../../Components/rating";
 import "./Skills.scss";
 
 class Skills extends Component {
