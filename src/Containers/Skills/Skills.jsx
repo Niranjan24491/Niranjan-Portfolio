@@ -11,7 +11,7 @@ class Skills extends Component {
     image = false,
     textPosition = "right",
     tooltip = true,
-    color = "#EBAA32"
+    color = "#DD4B39"
   ) => {
     return (
       <Rating
@@ -33,7 +33,6 @@ class Skills extends Component {
         <h3 className="name">
           {" "}
           What's life without <span className="sub-name"> skills</span> . . .
-          !!!
         </h3>
         <Grid fluid={true}>
           <Row className="show-grid">
@@ -112,7 +111,6 @@ class Skills extends Component {
         <h3 className="name">
           {" "}
           What's<span className="sub-name"> skills</span> without tools . . .
-          !!!
         </h3>
         <Grid fluid={true}>
           <Row className="show-grid">
@@ -142,7 +140,7 @@ class Skills extends Component {
             {" "}
             skills
           </span>{" "}
-          . . . !!!
+          . . .
         </h3>
         <Grid fluid={true}>
           <Row>

@@ -32,6 +32,7 @@ export default class Rating extends Component {
         array.push(
           <div
             id={i}
+            key={i}
             style={this.filledRatingColor()}
             className={`filled-class-${ratingType}`}
           />
@@ -52,6 +53,7 @@ export default class Rating extends Component {
         array.push(
           <div
             id={i}
+            key={i}
             style={this.nonFilledRatingColor()}
             className={`no-filled-class-${ratingType}`}
           />
@@ -87,7 +89,7 @@ export default class Rating extends Component {
     const { color = RATING_COLOR } = this.props;
     return {
       border: `1px solid ${color}`,
-      "background-color": color
+      backgroundColor: color
     };
   };
 
@@ -116,11 +118,11 @@ export default class Rating extends Component {
         {textPosition === "right" && (
           <div className="rating-name">{this.addRateType()}</div>
         )}
-        <div class="rating-tooltip">
+        <div className="rating-tooltip">
           {tooltip && (
-            <span class="rating-tooltiptext">{this.onRatingHover()}</span>
+            <span className="rating-tooltiptext">{this.onRatingHover()}</span>
           )}
-          <div className={structureClass} totalRating={rating}>
+          <div className={structureClass} totalrating={rating}>
             {textPosition === "left" && this.drawFilledState()}
             {this.drawNonFilledState()}
             {textPosition === "right" && this.drawFilledState()}

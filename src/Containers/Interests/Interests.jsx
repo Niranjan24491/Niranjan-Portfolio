@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Row, Col, Button } from "react-bootstrap";
+import { Grid, Row, Col, Button, Image } from "react-bootstrap";
 import Gallery from "react-photo-gallery";
 import "./Interests.scss";
 import bombe from "../../../images/bombe.jpg";
@@ -35,35 +35,79 @@ const PHOTO_SET = [
 ];
 
 class Interests extends Component {
-  selectPhoto = (e, obj) => {
-    if (e.target.id === "bombe") {
+  selectPhoto = selected => {
+    if (selected === "bombe") {
       window.open("https://youtu.be/C5-jtz_21SA");
-    } else if (e.target.id === "antammas") {
+    } else if (selected === "antammas") {
       window.open("https://youtu.be/OhjKDvrNaws");
-    } else if (e.target.id === "drugception") {
+    } else if (selected === "drugception") {
       window.open("https://youtu.be/g3tipuAfFOk");
     } else {
       window.open("https://youtu.be/SsgshEhDQrY");
     }
   };
+
   render() {
     return (
       <div className="interests-container" id="interests">
         <h1 className="name">Interests</h1>
-        <Grid fluid={true}>
+        <Grid fluid={true} className="interests-content">
           <Row>
             <Col xs={12} md={12} lg={12}>
-              <h3>The ART of Movie Making</h3>
-              <h5> I have made a couple of short movies to learn the art</h5>
+              <h2>The ART of Movie Making</h2>
+              <h3> I have made a couple of short movies to learn the art</h3>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={12} lg={12}>
-              <Gallery
-                photos={PHOTO_SET}
-                columns={2}
-                onClick={this.selectPhoto}
-              />
+            <Col xs={6} md={6} lg={6}>
+              <Image src={bombe} className="movie-image" />
+            </Col>
+            <Col xs={6} md={6} lg={6}>
+              <h2
+                className="movie-name"
+                onClick={e => this.selectPhoto("bombe")}
+              >
+                Bombe Heluthaite (2017)
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={6} lg={6}>
+              <Image src={antammas} className="movie-image" />
+            </Col>
+            <Col xs={6} md={6} lg={6}>
+              <h2
+                className="movie-name"
+                onClick={e => this.selectPhoto("antammas")}
+              >
+                Antammas (2016)
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={6} lg={6}>
+              <Image src={drupception} className="movie-image" />
+            </Col>
+            <Col xs={6} md={6} lg={6}>
+              <h2
+                className="movie-name"
+                onClick={e => this.selectPhoto("drugception")}
+              >
+                Drugception (2016)
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={6} lg={6}>
+              <Image src={alegalu} className="movie-image" />
+            </Col>
+            <Col xs={6} md={6} lg={6}>
+              <h2
+                className="movie-name"
+                onClick={e => this.selectPhoto("alegalu")}
+              >
+                Alegalu (2015)
+              </h2>
             </Col>
           </Row>
           <Row>

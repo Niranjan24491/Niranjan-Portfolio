@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Home.scss";
-import htmlLogo from "../../../images/htmlLogo.png";
 import { Grid, Row, Col } from "react-bootstrap";
 import FontAwesome from "react-fontawesome";
 
@@ -65,6 +64,26 @@ export default class Home extends Component {
                 name="linkedin"
                 style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
               />
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12} md={12} xs={12} className={"aside"}>
+            <div>
+              <h2>7</h2>
+              <h3>PROJECTS</h3>
+            </div>
+            <div>
+              <h2>1000 +</h2>
+              <h3>CODING HOURS</h3>
+            </div>
+            <div>
+              <h2>5000 +</h2>
+              <h3>LEARNING HOURS</h3>
+            </div>
+            <div>
+              <h2>10000 +</h2>
+              <h3>DREAMING HOURS</h3>
             </div>
           </Col>
         </Row>

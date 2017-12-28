@@ -1,6 +1,5 @@
 .experience-container {
   min-height: 100%;
-  border-bottom: 1px solid orangered;
 
   h1 {
     text-align: center;
@@ -8,8 +7,12 @@
     font-weight: bold;
   }
 
+  h2 {
+    font-weight: bold;
+  }
+
   .duration {
-    color: orangered;
+    color: crimson;
   }
 
   .designation {

@@ -16,12 +16,13 @@ export default class Education extends Component {
               <ul className="timeline">
                 <li>
                   <div className="edu-description">
-                    <h2>Poorna Prajna Education Center</h2>
-                    <h4>CGPA: 88%</h4>
-                    <h3> 1997-2007</h3>
+                    <h2>Nitte Meenakshi Institute of Technology</h2>
+                    <h4>Computer Science and Engineering</h4>
+                    <h4>CGPA: 77.5%</h4>
+                    <h3> 2009-2013</h3>
                   </div>
                   <div className="edu-image">
-                    <Image src={schoolLogo} circle />
+                    <Image src={collegeLogo} circle />
                   </div>
                 </li>
 
@@ -33,23 +34,18 @@ export default class Education extends Component {
                     <h3> 2007-2009</h3>
                   </div>
                   <div className="edu-image">
-                    <Image
-                      src={pucLogo}
-                      style={{ "margin-top": "18%" }}
-                      circle
-                    />
+                    <Image src={pucLogo} style={{ marginTop: "18%" }} circle />
                   </div>
                 </li>
 
                 <li>
                   <div className="edu-description">
-                    <h2>Nitte Meenakshi Institute of Technology</h2>
-                    <h4>Computer Science and Engineering</h4>
-                    <h4>CGPA: 77.5%</h4>
-                    <h3> 2009-2013</h3>
+                    <h2>Poorna Prajna Education Center</h2>
+                    <h4>CGPA: 88%</h4>
+                    <h3> 1997-2007</h3>
                   </div>
                   <div className="edu-image">
-                    <Image src={collegeLogo} circle />
+                    <Image src={schoolLogo} circle />
                   </div>
                 </li>
               </ul>

@@ -102,7 +102,7 @@ class Contacts extends Component {
             <Col xs={12} md={12} lg={12} className="contacts-map">
               <MyMapComponent
                 isMarkerShown
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYxG-dTkgoxcODx-cMrZn-7EuVMDcrc4"
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `300px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

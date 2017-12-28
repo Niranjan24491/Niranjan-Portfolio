@@ -2,7 +2,6 @@
   min-height: 100%;
   padding-top: 7%;
   padding-left: 2%;
-  border-bottom: 1px solid orangered;
 
   h1 {
     font-size: 85px;
@@ -42,7 +41,8 @@
   }
 
   .social-card {
-    padding-top: 6%;
+    padding-top: 3%;
+    padding-bottom: 6%;
     span {
       margin-right: 2%;
     }
@@ -82,5 +82,21 @@
   .fa-youtube {
     background: #bb0000;
     color: white;
+  }
+
+  .aside {
+    background-color: black;
+    height: 114px;
+    text-align: center;
+    div {
+      display: inline-block;
+      text-align: center;
+      width: 180px;
+
+      h2,
+      h3 {
+        color: antiquewhite;
+      }
+    }
   }
 }
